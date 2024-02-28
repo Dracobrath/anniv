@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7e0d9; /* Light pink background */
+}
+
+.slideshow-container {
+    bborder: 2px solid #f7e0d9; /* Light pink border color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px; /* Padding inside the border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px; /* Adjust spacing from top */
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.slide-message {
+    margin-top: 10px;
+    color: #333; /* Darker text color */
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #bb843b; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the border */
+    display: inline-block; /* Make the message inline */
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
